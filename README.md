@@ -1,86 +1,44 @@
 <div align="center">
 
-# public void CompileAndPray() { run(); }
-## Object-Oriented Programming Portfolio: Gymtopia
+# `public void CompileAndPray() { run(); }` 
+## Object-Oriented Programming Portfolio
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=24&pause=800&color=CC0000&center=true&vCenter=true&width=700&lines=UET+Lahore+%7C+BS+Computer+Science;Lifting+Weights+%26+Pointers+Since+2026;4+Sets+of+12+Reps+of+Garbage+Collection;Instantiating+Gainz+in+C%23+%26+React;Roll+No%3A+2025-CS-531+%7C+Muhammad+Uwais+Baig" alt="Gymtopia Typing Banner" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=25&pause=1000&color=00599C&center=true&vCenter=true&width=700&lines=UET+Lahore+%7C+BS+Computer+Science;20%2B+C%23+Assignments+Inside;Turning+Coffee+Into+Compiled+Code;404%3A+Memory+Leak+Not+Found;Eat.+Sleep.+Instantiate.+Repeat." alt="Typing SVG" />
 
-<img align="right" alt="Coding" width="300" src="https://raw.githubusercontent.com/devSouvik/devSouvik/master/gif3.gif">
+<img align="right" alt="Coding" width="300" src="assets/gym.gif">
 
 </div>
 
-### About Gymtopia
+### 👨💻 About This Repository
 
-This repository is a fully functional Gym Management System developed for my OOP coursework at UET Lahore. It features a complete React-based GUI console alongside a mirroring C# core implementation, designed to demonstrate encapsulation, inheritance, and dynamic polymorphism.
+Welcome to my **OOP Arsenal**. This repository is a comprehensive log of my progression in Object-Oriented Programming during my second semester at UET Lahore (Roll No: 2025-CS-531). It bridges theoretical software engineering concepts with functional, logic-driven architecture. 
 
-Instead of generic scripts, Gymtopia bridges real-world business logic (member registry, billing status, check-in logs, and consistency tracking) with structured software design patterns.
+Instead of scattered scripts, you will find over 20 structured C# assignments, demonstrating practical applications of core OOP pillars, algorithmic problem solving, and clean directory management.
 
 <br clear="right"/>
 
 ---
 
-### OOP Core Architecture
-
-Our architecture revolves around real-world objects and strict inheritance hierarchies:
+### 🧠 The Architecture
 
 ```csharp
-// Base blueprint representing any person interacting with Gymtopia
-public class Person 
+class OOP_Portfolio : UET_Coursework 
 {
-    private string _id; // Encapsulation: Access restricted to getters
-    protected string Name; 
-    public string Phone { get; }
+    public string Owner = "Muhammad Uwais Baig";
+    public string TechStack = "C# .NET";
+    
+    public List<string> CorePrinciples = new List<string> {
+        "Encapsulation", 
+        "Inheritance", 
+        "Polymorphism", 
+        "Abstraction"
+    };
 
-    public virtual string ToString() => $"Person: {Name} (ID: {_id})";
-}
-
-// Specialization of Person with gym membership mechanics
-public class Member : Person 
-{
-    private string _feeStatus; // Paid / Unpaid
-    public string Package { get; set; } 
-    public List<DateTime> CheckInLogs { get; }
-
-    // Polymorphism: Overriding the baseline string conversion
-    public override string ToString() 
+    public void ExecuteAssignments() 
     {
-        return $"Member: {Name} | Package: {Package} | Consistency: {GetConsistency()}%";
-    }
-
-    public double GetConsistency() 
-    {
-        // Consistency is computed dynamically based on monthly logs
-        return (CheckInLogs.Count / 30.0) * 100;
+        Console.WriteLine("Loading 20+ structured console applications...");
+        Console.WriteLine("Parsing File I/O operations...");
+        Console.WriteLine("Traversing 2D Probability Matrices...");
     }
 }
 ```
-
----
-
-### Gym Member Status vs Compiler Logs
-
-| Scenario | Gym Attendant Actions | Compiler Reactions |
-|---|---|---|
-| Member cancels membership | "Let me remove you from our storage list." | `NullReferenceException: Member profile not found.` |
-| Member skips leg day | "Please update your trainer schedule." | `Warning: Infinite loop detected in SquatRoutine.` |
-| Member pays monthly fee | "Your status is now updated to Paid." | `GarbageCollector: Freed up 3000 bytes of pending dues.` |
-
----
-
-### Local Setup
-
-To run the React dashboard locally on your machine:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/UwaisBaig/GymTopia---Gym-Managemnet-System.git
-   ```
-2. Enter the directory and install dependencies:
-   ```bash
-   cd GymTopia---Gym-Managemnet-System
-   npm install
-   ```
-3. Run the development server:
-   ```bash
-   npm run dev
-   ```
