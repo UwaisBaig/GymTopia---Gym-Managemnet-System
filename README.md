@@ -5,7 +5,7 @@
 
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=24&pause=800&color=CC0000&center=true&vCenter=true&width=700&lines=UET+Lahore+%7C+BS+Computer+Science;Lifting+Weights+%26+Pointers+Since+2026;4+Sets+of+12+Reps+of+Garbage+Collection;Instantiating+Gainz+in+C%23+%26+React;Roll+No%3A+2025-CS-531+%7C+Muhammad+Uwais+Baig" alt="Gymtopia Typing Banner" />
 
-<img align="right" alt="Coding" width="300" src="https://raw.githubusercontent.com/UwaisBaig/GymTopia---Gym-Managemnet-System/main/assets/developer-gym.gif">
+<img align="right" alt="Coding" width="300" src="https://media.giphy.com/media/3oKIPnAiaUCo6W1FCg/giphy.gif">
 
 </div>
 
