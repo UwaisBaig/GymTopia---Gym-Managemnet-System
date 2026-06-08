@@ -1,58 +1,55 @@
 <div align="center">
 
-# 🏋️‍♂️ `GYMTOPIA` — NEXT-GEN GYM OS
-### *“Leg Day is Optional. Compiling is Not.”*
+# public void CompileAndPray() { run(); }
+## Object-Oriented Programming Portfolio: Gymtopia
 
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=24&pause=800&color=CC0000&center=true&vCenter=true&width=700&lines=UET+Lahore+%7C+BS+Computer+Science;Lifting+Weights+%26+Pointers+Since+2026;4+Sets+of+12+Reps+of+Garbage+Collection;Instantiating+Gainz+in+C%23+%26+React;Roll+No%3A+2025-CS-531+%7C+Muhammad+Uwais+Baig" alt="Gymtopia Typing Banner" />
 
-[![Tech Stack](https://img.shields.io/badge/Stack-C%23%20%7C%20React%20%7C%20Vite-CC0000?style=for-the-badge)](https://github.com/UwaisBaig/GymTopia---Gym-Managemnet-System)
-[![OOP Course](https://img.shields.io/badge/Course-Object--Oriented%20Programming-black?style=for-the-badge&logo=dotnet)](https://github.com/UwaisBaig/GymTopia---Gym-Managemnet-System)
-
----
+<img align="right" alt="Coding" width="300" src="https://raw.githubusercontent.com/devSouvik/devSouvik/master/gif3.gif">
 
 </div>
 
-### 🚨 System Diagnostic: The Attendant vs. The Compiler
-```
-[ATTENDANT] -> "Sir, a member wants to cancel their Gold membership."
-[COMPILER]  -> "InvalidOperationException: Member consistency index is already 100%."
-[ATTENDANT] -> "But they aren't paying their dues!"
-[COMPILER]  -> "Garbage Collector has locked the target. Please wait..."
-```
+### About Gymtopia
+
+This repository is a fully functional Gym Management System developed for my OOP coursework at UET Lahore. It features a complete React-based GUI console alongside a mirroring C# core implementation, designed to demonstrate encapsulation, inheritance, and dynamic polymorphism.
+
+Instead of generic scripts, Gymtopia bridges real-world business logic (member registry, billing status, check-in logs, and consistency tracking) with structured software design patterns.
+
+<br clear="right"/>
 
 ---
 
-### 🧠 The Core Architecture (OOP Blueprint)
+### OOP Core Architecture
 
-The Gymtopia ecosystem is powered by clean hierarchical domain models structured to enforce solid software engineering principles. Below is the active layout running under the hood:
+Our architecture revolves around real-world objects and strict inheritance hierarchies:
 
 ```csharp
-// Base Blueprint for all Humans entering the Gymtopia Zone
+// Base blueprint representing any person interacting with Gymtopia
 public class Person 
 {
-    private string _id;          // Encapsulated Key
-    protected string Name;       // Inherited Identifier
-    public string Phone { get; } // Read-Only Property
-    
-    public virtual string ToString() => $"[Person] {Name} (ID: {_id})";
+    private string _id; // Encapsulation: Access restricted to getters
+    protected string Name; 
+    public string Phone { get; }
+
+    public virtual string ToString() => $"Person: {Name} (ID: {_id})";
 }
 
-// Specialization: The Gym Warrior
+// Specialization of Person with gym membership mechanics
 public class Member : Person 
 {
-    private double _monthlyFeeStatus; 
-    public string Package { get; set; } // "Silver", "Gold", or "Premium"
+    private string _feeStatus; // Paid / Unpaid
+    public string Package { get; set; } 
     public List<DateTime> CheckInLogs { get; }
 
-    // Dynamic Polymorphism: Overriding baseline representation
+    // Polymorphism: Overriding the baseline string conversion
     public override string ToString() 
     {
-        return $"[Member] {Name} | Package: {Package} | Consistency: {GetConsistency()}%";
+        return $"Member: {Name} | Package: {Package} | Consistency: {GetConsistency()}%";
     }
 
     public double GetConsistency() 
     {
-        // Internal business logic: calculates attendance consistency metrics
+        // Consistency is computed dynamically based on monthly logs
         return (CheckInLogs.Count / 30.0) * 100;
     }
 }
@@ -60,52 +57,30 @@ public class Member : Person
 
 ---
 
-### 🛠️ Hardware & Software Modules
+### Gym Member Status vs Compiler Logs
 
-Our custom GUI features twin command center layouts built for high performance:
-
-*   🔴 **The Widescreen Command Center (`1250px` Canvas)**: Re-engineered layout giving the admin and attendant full grid visibility.
-*   🔴 **High-Power Login Terminal**: Featuring a vertically stacked `84px` emblem badge and aggressive red typography branding.
-*   🔴 **Input-State Continuity Fix**: Custom layout routing that keeps form elements focused, allowing fluid high-speed entries.
-*   🔴 **Local Persistence Engine**: Real-time storage serialization ensuring no member logs, complaints, or dues are dropped on crash.
-
----
-
-### 🧬 Developer Fitness Log (`oop-humor.json`)
-
-```json
-{
-  "routine": {
-    "Monday": "Chest Day && Branch Merging",
-    "Wednesday": "Squats && Resolving NullPointerExceptions",
-    "Friday": "Deadlifts && Garbage Collection Curls"
-  },
-  "dietary_macros": {
-    "protein": "Whey Isolate",
-    "energy": "Dark Roast Coffee && Raw Assembly Code"
-  },
-  "rules": [
-    "Never skip leg day.",
-    "Never push directly to production main.",
-    "Do 3 sets of 15 code refactors daily."
-  ]
-}
-```
+| Scenario | Gym Attendant Actions | Compiler Reactions |
+|---|---|---|
+| Member cancels membership | "Let me remove you from our storage list." | `NullReferenceException: Member profile not found.` |
+| Member skips leg day | "Please update your trainer schedule." | `Warning: Infinite loop detected in SquatRoutine.` |
+| Member pays monthly fee | "Your status is now updated to Paid." | `GarbageCollector: Freed up 3000 bytes of pending dues.` |
 
 ---
 
-### ⚙️ How to Boot the System
+### Local Setup
 
-1.  **Clone & Access System**:
-    ```bash
-    git clone https://github.com/UwaisBaig/GymTopia---Gym-Managemnet-System.git
-    cd GymTopia---Gym-Managemnet-System
-    ```
-2.  **Install Engine dependencies**:
-    ```bash
-    npm install
-    ```
-3.  **Boot Dev Host**:
-    ```bash
-    npm run dev
-    ```
+To run the React dashboard locally on your machine:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/UwaisBaig/GymTopia---Gym-Managemnet-System.git
+   ```
+2. Enter the directory and install dependencies:
+   ```bash
+   cd GymTopia---Gym-Managemnet-System
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
